@@ -10,7 +10,7 @@ import com.tweetapp.model.User;
 
 @Repository
 public interface UserRepo extends CrudRepository<User, Long> {
-	@Query(value="select u.* from user u where u.email_Id=:emailId and u.password=:password",nativeQuery=true)
+	@Query(value="select u.* from user u where u.emailId=:emailId and u.password=:password",nativeQuery=true)
 	Optional<User> findByemailIdAndPassword(String emailId, String password);
 
 	//@Query("{ emailId : ?0}")

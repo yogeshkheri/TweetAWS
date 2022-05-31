@@ -1,10 +1,13 @@
 spring:
   datasource:
-    url: jdbc:mysql://tweetdb.cd0fbymfyjl3.us-west-2.rds.amazonaws.com:3306/tweetdbaws?useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
-    username: admin
-    password: yLTFAun3a9zmo0jEYn7N
+    url: jdbc:mysql://tweetapp.c31creu70lqu.us-east-1.rds.amazonaws.com:3306/tweetaws?useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root1234
   application:
     name: TweetAppService
+  jpa:
+    hibernate:
+      ddl-auto: update
 kafka:
     consumer:
       bootstrap-servers: localhost:9092

@@ -1,7 +1,7 @@
 package com.tweetapp.util;
 
 public class TweetConstant {
-	public static final String ROOT_URL = "/api/v1.0/tweets";
+	public static final String ROOT_URL = "/tweets";
 	public static final String LIKES = "likes";
 	public static final String REPLIES = "replies";
 	public static final String TWEET_ID = "tweetId";
